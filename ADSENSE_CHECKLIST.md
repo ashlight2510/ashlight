@@ -20,7 +20,7 @@
 - [x] **파비콘** - SVG 파비콘 설정
 
 ### 4. 콘텐츠
-- [x] **14개 서비스** - 다양한 계산기 및 테스트 제공
+- [x] **5개 서비스** - 다양한 유틸리티 도구 제공
 - [x] **고유 콘텐츠** - 각 서비스별 독립적인 기능
 - [x] **네비게이션** - 명확한 메뉴 구조
 
@@ -55,7 +55,7 @@
 
 ### 2단계: Google Search Console 등록
 1. https://search.google.com/search-console 접속
-2. `funnyfunny.cloud` 도메인 추가
+2. `ashlight.store` 도메인 추가
 3. DNS 인증 또는 HTML 파일 업로드로 소유권 확인
 4. 사이트맵 제출 (`sitemap.xml`)
 
@@ -65,7 +65,7 @@
 
 ### 4단계: AdSense 신청
 1. https://www.google.com/adsense 접속
-2. 사이트 URL 입력: `funnyfunny.cloud`
+2. 사이트 URL 입력: `ashlight.store`
 3. 사이트 정보 입력
 4. 개인정보처리방침 및 이용약관 링크 제공
 5. 신청 제출

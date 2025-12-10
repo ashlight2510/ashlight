@@ -1,7 +1,7 @@
 # 🎯 Google AdSense 승인 최종 점검 리포트
 
 **점검 일자**: 2024년 1월  
-**사이트**: https://funnyfunny.cloud
+**사이트**: https://ashlight.store
 
 ---
 
@@ -25,7 +25,7 @@
 
 ### 2. 기술적 요구사항 (100% 완료)
 - ✅ **HTTPS** - GitHub Pages 자동 제공
-- ✅ **도메인 소유권** - funnyfunny.cloud
+- ✅ **도메인 소유권** - ashlight.store
 - ✅ **반응형 디자인** - 모바일/태블릿/데스크톱 지원
 - ✅ **파비콘** - SVG 파비콘 설정 완료
 - ✅ **로딩 속도** - Tailwind CDN 사용으로 빠른 로딩
@@ -36,14 +36,13 @@
   - 스크립트: `adsbygoogle.js` 로드
 - ✅ **ads.txt** - 루트 디렉토리에 생성 완료
   - 내용: `google.com, pub-1204894220949193, DIRECT, f08c47fec0942fa0`
-  - 위치: `https://funnyfunny.cloud/ads.txt` ✅
+  - 위치: `https://ashlight.store/ads.txt` ✅
 
 ### 4. SEO 최적화 (100% 완료)
 - ✅ **sitemap.xml** - 모든 페이지 포함
   - 메인 페이지
-  - 14개 서브 서비스
-  - 정책 페이지 (privacy.html, terms.html)
-  - 게시판 링크
+  - 5개 서브 서비스 (time, news, weather, snaptrail, day)
+  - 정책 페이지 (privacy.html, terms.html, policy.html, copyright.html)
   
 - ✅ **robots.txt** - 검색엔진 크롤링 허용
   - 사이트맵 경로 명시
@@ -56,7 +55,7 @@
 - ✅ **구조화된 데이터** - Schema.org WebSite 스키마 포함
 
 ### 5. 콘텐츠 (90% 완료)
-- ✅ **14개 서비스** - 다양한 계산기 및 테스트 제공
+- ✅ **5개 서비스** - 다양한 유틸리티 도구 제공
 - ✅ **고유 콘텐츠** - 각 서비스별 독립적인 기능
 - ✅ **네비게이션** - 명확한 메뉴 구조
 - ⚠️ **각 서비스 작동 여부** - 확인 필요 (서브 도메인별)
@@ -112,17 +111,17 @@
 ### 필수 확인 사항
 - [ ] 모든 서브 서비스가 정상 작동하는지 확인
 - [ ] 개인정보처리방침의 연락처 이메일이 작동하는지 확인
-- [ ] ads.txt 파일이 `https://funnyfunny.cloud/ads.txt`에서 접근 가능한지 확인
+- [ ] ads.txt 파일이 `https://ashlight.store/ads.txt`에서 접근 가능한지 확인
 - [ ] Google Search Console에 사이트 등록 및 사이트맵 제출
 - [ ] Google Analytics에서 최소 1주일 이상 데이터 수집 확인
 - [ ] 자연스러운 트래픽이 어느 정도 수집되었는지 확인
 
 ### 신청 시 준비할 정보
-1. **사이트 URL**: `https://funnyfunny.cloud`
-2. **사이트 카테고리**: 엔터테인먼트/유틸리티
-3. **주요 콘텐츠**: 계산기, 테스트, 유틸리티 서비스
-4. **개인정보처리방침 URL**: `https://funnyfunny.cloud/privacy.html`
-5. **이용약관 URL**: `https://funnyfunny.cloud/terms.html`
+1. **사이트 URL**: `https://ashlight.store`
+2. **사이트 카테고리**: 유틸리티/도구
+3. **주요 콘텐츠**: 시간, 뉴스, 날씨, 이벤트 추적, 날짜 계산 등 유틸리티 서비스
+4. **개인정보처리방침 URL**: `https://ashlight.store/privacy.html`
+5. **이용약관 URL**: `https://ashlight.store/terms.html`
 6. **AdSense Publisher ID**: `ca-pub-1204894220949193`
 
 ---
@@ -131,9 +130,9 @@
 
 ### Step 1: Google Search Console 등록 (필수)
 1. https://search.google.com/search-console 접속
-2. `funnyfunny.cloud` 도메인 추가
+2. `ashlight.store` 도메인 추가
 3. DNS 인증 또는 HTML 파일 업로드로 소유권 확인
-4. 사이트맵 제출: `https://funnyfunny.cloud/sitemap.xml`
+4. 사이트맵 제출: `https://ashlight.store/sitemap.xml`
 5. 색인 생성 요청 (최소 1주일 대기)
 
 ### Step 2: Google Analytics 확인
@@ -150,7 +149,7 @@
 ### Step 4: AdSense 신청
 1. https://www.google.com/adsense 접속
 2. "사이트 시작하기" 클릭
-3. 사이트 URL 입력: `funnyfunny.cloud`
+3. 사이트 URL 입력: `ashlight.store`
 4. 사이트 정보 입력
    - 사이트 카테고리: 엔터테인먼트 또는 유틸리티
    - 주요 콘텐츠: 계산기, 테스트, 유틸리티
