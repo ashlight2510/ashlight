@@ -23,13 +23,13 @@
 3. 루트 디렉토리(`/`) 선택
 4. 저장 후 `https://[username].github.io/ashlight/` 또는 커스텀 도메인 연결
 
-### 커스텀 도메인 연결 (ashlight.store)
+### 커스텀 도메인 연결 (funnyfunny.cloud)
 
-1. DNS 설정에서 `ashlight.store`를 GitHub Pages IP로 연결
+1. DNS 설정에서 `funnyfunny.cloud`를 GitHub Pages IP로 연결
    - A 레코드: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
    - 또는 CNAME: `[username].github.io`
 
-2. GitHub Pages 설정에서 Custom domain에 `ashlight.store` 입력
+2. GitHub Pages 설정에서 Custom domain에 `funnyfunny.cloud` 입력
 3. Enforce HTTPS 체크
 
 ## ⚙️ 설정 필요 사항
@@ -53,11 +53,11 @@ Google Tag Manager에서 다음 태그를 설정하세요:
 
 ## 📋 포함된 서비스 (5개)
 
-1. ⏰ AshLight Time (`time.ashlight.store`) - 타임스탬프, 타임존 변환, 시간 유틸리티
-2. 📰 AshLight News (`news.ashlight.store`) - IT/뉴스 애그리게이터
-3. 🌤️ AshLight Weather (`weather.ashlight.store`) - 날씨 조회 및 정보
-4. 📍 SnapTrail (`snaptrail.ashlight.store`) - 이벤트/맵/시계열 유틸리티
-5. 📅 AshLight Day Tools (`day.ashlight.store`) - 날짜 계산, D-Day, 기념일
+1. ⏰ AshLight Time (`time.funnyfunny.cloud`) - 타임스탬프, 타임존 변환, 시간 유틸리티
+2. 📰 AshLight News (`news.funnyfunny.cloud`) - IT/뉴스 애그리게이터
+3. 🌤️ AshLight Weather (`weather.funnyfunny.cloud`) - 날씨 조회 및 정보
+4. 📍 SnapTrail (`snaptrail.funnyfunny.cloud`) - 이벤트/맵/시계열 유틸리티
+5. 📅 AshLight Day Tools (`day.funnyfunny.cloud`) - 날짜 계산, D-Day, 기념일
 
 ## 🎨 디자인 특징
 

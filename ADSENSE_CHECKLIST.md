@@ -55,7 +55,7 @@
 
 ### 2단계: Google Search Console 등록
 1. https://search.google.com/search-console 접속
-2. `ashlight.store` 도메인 추가
+2. `funnyfunny.cloud` 도메인 추가
 3. DNS 인증 또는 HTML 파일 업로드로 소유권 확인
 4. 사이트맵 제출 (`sitemap.xml`)
 
@@ -65,7 +65,7 @@
 
 ### 4단계: AdSense 신청
 1. https://www.google.com/adsense 접속
-2. 사이트 URL 입력: `ashlight.store`
+2. 사이트 URL 입력: `funnyfunny.cloud`
 3. 사이트 정보 입력
 4. 개인정보처리방침 및 이용약관 링크 제공
 5. 신청 제출
