@@ -32,10 +32,7 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://ashlight.store/" />
-    <meta
-      property="og:title"
-      content="AshLight Store — 유틸리티 허브"
-    />
+    <meta property="og:title" content="AshLight Store — 유틸리티 허브" />
     <meta
       property="og:description"
       content="시간/일정/파일/이미지/OCR/영상/오디오 유틸리티 제공"
@@ -44,10 +41,7 @@
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://ashlight.store/" />
-    <meta
-      property="twitter:title"
-      content="AshLight Store — 유틸리티 허브"
-    />
+    <meta property="twitter:title" content="AshLight Store — 유틸리티 허브" />
     <meta
       property="twitter:description"
       content="시간/일정/파일/이미지/OCR/영상/오디오 유틸리티 제공"
@@ -118,18 +112,47 @@
       }
     </style>
     <style>
-    .adsense-block {
-      margin: 16px 0;
-      display: flex;
-      justify-content: center;
-    }
-    .adsbygoogle {
-      display: block;
-      margin: 16px auto;
+      .adsense-block {
+        margin: 16px 0;
+        display: flex;
+        justify-content: center;
+      }
+      .adsbygoogle {
+        display: block;
+        margin: 16px auto;
         text-align: center;
-}
-  </style>
-</head>
+      }
+      .lang-switch {
+        display: inline-flex;
+        gap: 4px;
+        padding: 2px;
+        border-radius: 9999px;
+        background: rgba(148, 163, 184, 0.1);
+        border: 1px solid rgba(148, 163, 184, 0.2);
+      }
+      .lang-switch button {
+        border: none;
+        background: transparent;
+        color: #64748b;
+        font-size: 12px;
+        font-weight: 600;
+        padding: 4px 10px;
+        border-radius: 9999px;
+        cursor: pointer;
+        transition: all 0.2s;
+      }
+      .lang-switch button.active {
+        background: #475569;
+        color: #fff;
+      }
+      .lang-switch button:hover {
+        background: rgba(71, 85, 105, 0.1);
+      }
+      .lang-switch button.active:hover {
+        background: #334155;
+      }
+    </style>
+  </head>
   <body class="min-h-screen bg-slate-50 text-slate-900">
     <!-- Google Tag Manager (noscript) -->
     <noscript
@@ -159,27 +182,43 @@
           </div>
           <!-- <p class="text-sm text-slate-500">시간·도구·정보를 한 곳에</p> -->
         </div>
-        <a
-          href="https://funnyfunny.cloud"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-pink-500 to-yellow-400 text-white font-semibold shadow hover:opacity-90 transition"
-        >
-          😄 FunnyFunny
-        </a>
+        <div class="flex items-center gap-3">
+          <div
+            class="lang-switch"
+            role="tablist"
+            aria-label="Language switcher"
+          >
+            <button type="button" data-lang="ko" class="active">KR</button>
+            <button type="button" data-lang="en">EN</button>
+          </div>
+          <a
+            href="https://funnyfunny.cloud"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-pink-500 to-yellow-400 text-white font-semibold shadow hover:opacity-90 transition"
+          >
+            😄 FunnyFunny
+          </a>
+        </div>
       </div>
     </header>
 
     <main class="max-w-6xl mx-auto px-4 sm:px-6 py-10 space-y-10">
       <section class="grid gap-3 md:grid-cols-3 md:items-center">
         <div class="md:col-span-2 space-y-4">
-          <p class="text-sm font-semibold text-pink-500">AshLight Store</p>
+          <p class="text-sm font-semibold text-pink-500" data-i18n="brandTag">
+            AshLight Store
+          </p>
           <h1
             class="text-3xl sm:text-4xl font-black leading-tight tracking-tight"
+            data-i18n="heroTitle"
           >
             유틸 한방, 일상의 스마트 도구 모음
           </h1>
-          <p class="text-base text-slate-600 leading-relaxed">
+          <p
+            class="text-base text-slate-600 leading-relaxed"
+            data-i18n="heroDesc"
+          >
             설치 없이 바로 쓰는 실용 유틸리티만 모았습니다.
           </p>
           <div class="flex flex-wrap gap-3">
@@ -227,7 +266,9 @@
 
       <section id="services" class="space-y-4 pt-12 pb-12">
         <div class="flex items-center justify-between">
-          <h2 class="text-2xl font-bold">🛠️ 유용한 서비스들</h2>
+          <h2 class="text-2xl font-bold" data-i18n="servicesTitle">
+            🛠️ 유용한 서비스들
+          </h2>
           <!-- <p class="text-sm text-slate-500">도움이 되시길 바랍니다.</p> -->
         </div>
         <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -238,10 +279,15 @@
             class="group block p-5 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition"
           >
             <div class="flex items-center justify-between">
-              <h3 class="text-lg font-semibold">⏰ 예매는타이밍</h3>
+              <h3 class="text-lg font-semibold" data-i18n="serviceTimingTitle">
+                ⏰ 예매는타이밍
+              </h3>
               <span class="text-xs font-semibold text-pink-500">Utility</span>
             </div>
-            <p class="text-sm text-slate-500 mt-2">
+            <p
+              class="text-sm text-slate-500 mt-2"
+              data-i18n="serviceTimingDesc"
+            >
               타임스탬프, 타임존, 시간 계산 도구
             </p>
           </a>
@@ -253,10 +299,12 @@
             class="group block p-5 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition"
           >
             <div class="flex items-center justify-between">
-              <h3 class="text-lg font-semibold">📰 오늘의 IT 뉴스</h3>
+              <h3 class="text-lg font-semibold" data-i18n="serviceNewsTitle">
+                📰 오늘의 IT 뉴스
+              </h3>
               <span class="text-xs font-semibold text-orange-500">News</span>
             </div>
-            <p class="text-sm text-slate-500 mt-2">
+            <p class="text-sm text-slate-500 mt-2" data-i18n="serviceNewsDesc">
               국내 및 해외 IT 관련 뉴스를 빠르게 요약
             </p>
           </a>
@@ -268,10 +316,15 @@
             class="group block p-5 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition"
           >
             <div class="flex items-center justify-between">
-              <h3 class="text-lg font-semibold">🌤️ 지금날씨</h3>
+              <h3 class="text-lg font-semibold" data-i18n="serviceWeatherTitle">
+                🌤️ 지금날씨
+              </h3>
               <span class="text-xs font-semibold text-sky-500">Weather</span>
             </div>
-            <p class="text-sm text-slate-500 mt-2">
+            <p
+              class="text-sm text-slate-500 mt-2"
+              data-i18n="serviceWeatherDesc"
+            >
               내 근처와 주변 날씨 조회
             </p>
           </a>
@@ -283,10 +336,12 @@
             class="group block p-5 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition"
           >
             <div class="flex items-center justify-between">
-              <h3 class="text-lg font-semibold">🧵 FLOW 커뮤니티</h3>
+              <h3 class="text-lg font-semibold" data-i18n="serviceFlowTitle">
+                🧵 FLOW 커뮤니티
+              </h3>
               <span class="text-xs font-semibold text-pink-500">Community</span>
             </div>
-            <p class="text-sm text-slate-500 mt-2">
+            <p class="text-sm text-slate-500 mt-2" data-i18n="serviceFlowDesc">
               익명 글쓰기, 실시간 반응, 주제별 스레드
             </p>
           </a>
@@ -298,10 +353,12 @@
             class="group block p-5 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition"
           >
             <div class="flex items-center justify-between">
-              <h3 class="text-lg font-semibold">🧾 이미지 OCR</h3>
+              <h3 class="text-lg font-semibold" data-i18n="serviceOcrTitle">
+                🧾 이미지 OCR
+              </h3>
               <span class="text-xs font-semibold text-green-500">Utility</span>
             </div>
-            <p class="text-sm text-slate-500 mt-2">
+            <p class="text-sm text-slate-500 mt-2" data-i18n="serviceOcrDesc">
               사진 속 글자 빠르게 추출
             </p>
           </a>
@@ -313,10 +370,18 @@
             class="group block p-5 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition"
           >
             <div class="flex items-center justify-between">
-              <h3 class="text-lg font-semibold">🗜️ 로컬 이미지 최적화</h3>
+              <h3
+                class="text-lg font-semibold"
+                data-i18n="serviceImageOptTitle"
+              >
+                🗜️ 로컬 이미지 최적화
+              </h3>
               <span class="text-xs font-semibold text-blue-500">Utility</span>
             </div>
-            <p class="text-sm text-slate-500 mt-2">
+            <p
+              class="text-sm text-slate-500 mt-2"
+              data-i18n="serviceImageOptDesc"
+            >
               이미지 용량 줄이기 + 파일 인사이트
             </p>
           </a>
@@ -328,10 +393,20 @@
             class="group block p-5 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition"
           >
             <div class="flex items-center justify-between">
-              <h3 class="text-lg font-semibold">🖼️ 이미지 합치기</h3>
-              <span class="text-xs font-semibold text-fuchsia-500">Utility</span>
+              <h3
+                class="text-lg font-semibold"
+                data-i18n="serviceImageCombTitle"
+              >
+                🖼️ 이미지 합치기
+              </h3>
+              <span class="text-xs font-semibold text-fuchsia-500"
+                >Utility</span
+              >
             </div>
-            <p class="text-sm text-slate-500 mt-2">
+            <p
+              class="text-sm text-slate-500 mt-2"
+              data-i18n="serviceImageCombDesc"
+            >
               사진 합치기·PDF 변환
             </p>
           </a>
@@ -343,10 +418,15 @@
             class="group block p-5 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition"
           >
             <div class="flex items-center justify-between">
-              <h3 class="text-lg font-semibold">🎬 AutoCut Studio</h3>
+              <h3 class="text-lg font-semibold" data-i18n="serviceAutoCutTitle">
+                🎬 AutoCut Studio
+              </h3>
               <span class="text-xs font-semibold text-rose-500">Utility</span>
             </div>
-            <p class="text-sm text-slate-500 mt-2">
+            <p
+              class="text-sm text-slate-500 mt-2"
+              data-i18n="serviceAutoCutDesc"
+            >
               영상 침묵 감지·하이라이트 타임라인
             </p>
           </a>
@@ -358,10 +438,12 @@
             class="group block p-5 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition"
           >
             <div class="flex items-center justify-between">
-              <h3 class="text-lg font-semibold">🎧 오디오 편집기</h3>
+              <h3 class="text-lg font-semibold" data-i18n="serviceAudioTitle">
+                🎧 오디오 편집기
+              </h3>
               <span class="text-xs font-semibold text-cyan-500">Utility</span>
             </div>
-            <p class="text-sm text-slate-500 mt-2">
+            <p class="text-sm text-slate-500 mt-2" data-i18n="serviceAudioDesc">
               자르기·합치기·WAV 내보내기
             </p>
           </a>
@@ -373,10 +455,18 @@
             class="group block p-5 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition"
           >
             <div class="flex items-center justify-between">
-              <h3 class="text-lg font-semibold">😀 Emojicon</h3>
+              <h3
+                class="text-lg font-semibold"
+                data-i18n="serviceEmojiconTitle"
+              >
+                😀 Emojicon
+              </h3>
               <span class="text-xs font-semibold text-amber-500">Utility</span>
             </div>
-            <p class="text-sm text-slate-500 mt-2">
+            <p
+              class="text-sm text-slate-500 mt-2"
+              data-i18n="serviceEmojiconDesc"
+            >
               이모지로 아이콘·파비콘 제작
             </p>
           </a>
@@ -388,10 +478,12 @@
             class="group block p-5 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition"
           >
             <div class="flex items-center justify-between">
-              <h3 class="text-lg font-semibold">🧰 Meta Kit</h3>
+              <h3 class="text-lg font-semibold" data-i18n="serviceMetaTitle">
+                🧰 Meta Kit
+              </h3>
               <span class="text-xs font-semibold text-slate-600">SEO</span>
             </div>
-            <p class="text-sm text-slate-500 mt-2">
+            <p class="text-sm text-slate-500 mt-2" data-i18n="serviceMetaDesc">
               SEO·OG·파비콘 메타를 한 번에 생성
             </p>
           </a>
@@ -403,10 +495,12 @@
             class="group block p-5 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition"
           >
             <div class="flex items-center justify-between">
-              <h3 class="text-lg font-semibold">🍿 오늘 뭐 볼까? (OTT 픽)</h3>
+              <h3 class="text-lg font-semibold" data-i18n="servicePickTitle">
+                🍿 오늘 뭐 볼까? (OTT 픽)
+              </h3>
               <span class="text-xs font-semibold text-amber-500">OTT</span>
             </div>
-            <p class="text-sm text-slate-500 mt-2">
+            <p class="text-sm text-slate-500 mt-2" data-i18n="servicePickDesc">
               버튼 몇 번으로 바로 추천
             </p>
           </a>
@@ -418,10 +512,18 @@
             class="group block p-5 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition"
           >
             <div class="flex items-center justify-between">
-              <h3 class="text-lg font-semibold">📍 SnapTrail</h3>
+              <h3
+                class="text-lg font-semibold"
+                data-i18n="serviceSnapTrailTitle"
+              >
+                📍 SnapTrail
+              </h3>
               <span class="text-xs font-semibold text-purple-500">Photo</span>
             </div>
-            <p class="text-sm text-slate-500 mt-2">
+            <p
+              class="text-sm text-slate-500 mt-2"
+              data-i18n="serviceSnapTrailDesc"
+            >
               추억 타임라인 생성기
             </p>
           </a>
@@ -433,10 +535,12 @@
             class="group block p-5 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition"
           >
             <div class="flex items-center justify-between">
-              <h3 class="text-lg font-semibold">📅 D-day 계산기</h3>
+              <h3 class="text-lg font-semibold" data-i18n="serviceDayTitle">
+                📅 D-day 계산기
+              </h3>
               <span class="text-xs font-semibold text-emerald-500">Date</span>
             </div>
-            <p class="text-sm text-slate-500 mt-2">
+            <p class="text-sm text-slate-500 mt-2" data-i18n="serviceDayDesc">
               날짜 계산, D-day, N일 후
             </p>
           </a>
@@ -448,10 +552,12 @@
             class="group block p-5 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition"
           >
             <div class="flex items-center justify-between">
-              <h3 class="text-lg font-semibold">📐 평수 계산기</h3>
+              <h3 class="text-lg font-semibold" data-i18n="serviceHouseTitle">
+                📐 평수 계산기
+              </h3>
               <span class="text-xs font-semibold text-teal-500">Utility</span>
             </div>
-            <p class="text-sm text-slate-500 mt-2">
+            <p class="text-sm text-slate-500 mt-2" data-i18n="serviceHouseDesc">
               평↔제곱미터 변환 + 대표 평형
             </p>
           </a>
@@ -463,10 +569,12 @@
             class="group block p-5 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition"
           >
             <div class="flex items-center justify-between">
-              <h3 class="text-lg font-semibold">🎤 두성터득기</h3>
+              <h3 class="text-lg font-semibold" data-i18n="serviceVocalTitle">
+                🎤 두성터득기
+              </h3>
               <span class="text-xs font-semibold text-rose-500">Voice</span>
             </div>
-            <p class="text-sm text-slate-500 mt-2">
+            <p class="text-sm text-slate-500 mt-2" data-i18n="serviceVocalDesc">
               헤드보이스·두성 연습 루틴
             </p>
           </a>
@@ -475,87 +583,105 @@
 
       <section id="guides" class="space-y-4 pb-4">
         <div class="flex items-center justify-between">
-          <h2 class="text-xl font-bold">📌 서비스 가이드</h2>
+          <h2 class="text-xl font-bold" data-i18n="guidesTitle">
+            📌 서비스 가이드
+          </h2>
         </div>
         <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           <a
             href="/guides/flow.html"
             class="block rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-700 hover:shadow"
+            data-i18n="guideFlow"
             >FLOW 커뮤니티 가이드</a
           >
           <a
             href="/guides/video.html"
             class="block rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-700 hover:shadow"
+            data-i18n="guideAutoCut"
             >AutoCut Studio 가이드</a
           >
           <a
             href="/guides/file.html"
             class="block rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-700 hover:shadow"
+            data-i18n="guideFile"
             >로컬 이미지 최적화 가이드</a
           >
           <a
             href="/guides/meta.html"
             class="block rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-700 hover:shadow"
+            data-i18n="guideMeta"
             >Meta Kit 가이드</a
           >
           <a
             href="/guides/image.html"
             class="block rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-700 hover:shadow"
+            data-i18n="guideImage"
             >이미지 합치기 가이드</a
           >
           <a
             href="/guides/house.html"
             class="block rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-700 hover:shadow"
+            data-i18n="guideHouse"
             >평수 계산기 가이드</a
           >
           <a
             href="/guides/ocr.html"
             class="block rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-700 hover:shadow"
+            data-i18n="guideOcr"
             >이미지 OCR 가이드</a
           >
           <a
             href="/guides/audio.html"
             class="block rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-700 hover:shadow"
+            data-i18n="guideAudio"
             >Simple Audio Editor 가이드</a
           >
           <a
             href="/guides/vocal.html"
             class="block rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-700 hover:shadow"
+            data-i18n="guideVocal"
             >두성터득기 가이드</a
           >
           <a
             href="/guides/time.html"
             class="block rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-700 hover:shadow"
+            data-i18n="guideTime"
             >예매는타이밍 가이드</a
           >
           <a
             href="/guides/news.html"
             class="block rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-700 hover:shadow"
+            data-i18n="guideNews"
             >오늘의 IT 뉴스 가이드</a
           >
           <a
             href="/guides/weather.html"
             class="block rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-700 hover:shadow"
+            data-i18n="guideWeather"
             >지금날씨 가이드</a
           >
           <a
             href="/guides/pick.html"
             class="block rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-700 hover:shadow"
+            data-i18n="guidePick"
             >OTT 픽 가이드</a
           >
           <a
             href="/guides/emojicon.html"
             class="block rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-700 hover:shadow"
+            data-i18n="guideEmojicon"
             >EmojiCon Studio 가이드</a
           >
           <a
             href="/guides/snaptrail.html"
             class="block rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-700 hover:shadow"
+            data-i18n="guideSnapTrail"
             >SnapTrail 가이드</a
           >
           <a
             href="/guides/day.html"
             class="block rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-700 hover:shadow"
+            data-i18n="guideDay"
             >D-day 계산기 가이드</a
           >
         </div>
@@ -567,8 +693,14 @@
       >
         <div class="flex items-center justify-between mb-3">
           <div class="flex items-center gap-2">
-            <span class="text-sm font-semibold text-slate-700">스폰서</span>
-            <span class="text-xs text-slate-400">광고</span>
+            <span
+              class="text-sm font-semibold text-slate-700"
+              data-i18n="sponsorLabel"
+              >스폰서</span
+            >
+            <span class="text-xs text-slate-400" data-i18n="sponsorAd"
+              >광고</span
+            >
           </div>
           <span class="text-[11px] text-slate-400">AshLight Store</span>
         </div>
@@ -608,26 +740,33 @@
         <div
           class="rounded-2xl bg-white border border-slate-200 shadow-sm p-6 space-y-3"
         >
-          <h3 class="text-lg font-semibold">AshLight Store 소개</h3>
-          <p class="text-sm text-slate-600 leading-relaxed">
+          <h3 class="text-lg font-semibold" data-i18n="aboutTitle">
+            AshLight Store 소개
+          </h3>
+          <p
+            class="text-sm text-slate-600 leading-relaxed"
+            data-i18n="aboutDesc"
+          >
             실용 유틸리티를 한곳에 모았습니다. 시간·날씨·일정부터
             파일/이미지/OCR/영상/오디오 도구까지 바로 쓸 수 있습니다.
           </p>
           <ul class="text-sm text-slate-600 space-y-2">
             <li class="flex items-start gap-2">
               <span class="mt-1 h-2 w-2 rounded-full bg-emerald-500"></span
-              ><span>모든 서비스는 독립적으로 동작하며 가볍게 로드됩니다.</span>
+              ><span data-i18n="aboutItem1"
+                >모든 서비스는 독립적으로 동작하며 가볍게 로드됩니다.</span
+              >
             </li>
             <li class="flex items-start gap-2">
               <span class="mt-1 h-2 w-2 rounded-full bg-pink-500"></span
-              ><span
+              ><span data-i18n="aboutItem2"
                 >필요한 기능만 담아, 누구나 빠르고 쾌적하게 사용할 수 있도록
                 설계했습니다.
               </span>
             </li>
             <li class="flex items-start gap-2">
               <span class="mt-1 h-2 w-2 rounded-full bg-sky-500"></span
-              ><span
+              ><span data-i18n="aboutItem3"
                 >반응형 UI로 제작되어 어떤 기기에서도 동일하게 가볍고 부드럽게
                 동작합니다.</span
               >
@@ -638,20 +777,22 @@
         <div
           class="rounded-2xl bg-white border border-slate-200 shadow-sm p-6 space-y-3"
         >
-          <h3 class="text-lg font-semibold">운영 정보</h3>
-          <p class="text-sm text-slate-600">
+          <h3 class="text-lg font-semibold" data-i18n="operationTitle">
+            운영 정보
+          </h3>
+          <p class="text-sm text-slate-600" data-i18n="operationDesc">
             본 사이트는 AshLight에서 개발·운영하며 Google 정책을 준수합니다.
           </p>
           <div class="text-sm text-slate-600 space-y-1">
             <p>
-              문의:
+              <span data-i18n="operationContact">문의:</span>
               <a
                 href="mailto:ashlight2510@gmail.com"
                 class="text-pink-500 font-semibold hover:underline"
                 >ashlight2510@gmail.com</a
               >
             </p>
-            <p class="text-xs text-slate-500">
+            <p class="text-xs text-slate-500" data-i18n="operationFooter">
               개인정보처리방침, 이용약관, 운영정책은 하단 링크에서 확인할 수
               있습니다.
             </p>
@@ -665,17 +806,35 @@
         class="max-w-6xl mx-auto px-4 sm:px-6 text-center text-xs text-slate-500 space-y-3"
       >
         <div class="flex flex-wrap justify-center gap-3">
-          <a href="/privacy.html" class="hover:text-slate-700"
+          <a
+            href="/privacy.html"
+            class="hover:text-slate-700"
+            data-i18n="footerPrivacy"
             >개인정보처리방침</a
           >
           <span class="text-slate-300">•</span>
-          <a href="/terms.html" class="hover:text-slate-700">이용약관</a>
+          <a
+            href="/terms.html"
+            class="hover:text-slate-700"
+            data-i18n="footerTerms"
+            >이용약관</a
+          >
           <span class="text-slate-300">•</span>
-          <a href="/copyright.html" class="hover:text-slate-700">저작권 안내</a>
+          <a
+            href="/copyright.html"
+            class="hover:text-slate-700"
+            data-i18n="footerCopyright"
+            >저작권 안내</a
+          >
           <span class="text-slate-300">•</span>
-          <a href="/policy.html" class="hover:text-slate-700">운영정책</a>
+          <a
+            href="/policy.html"
+            class="hover:text-slate-700"
+            data-i18n="footerPolicy"
+            >운영정책</a
+          >
         </div>
-        <p>© AshLight Store</p>
+        <p data-i18n="footerRights">© AshLight Store</p>
       </div>
     </footer>
 
@@ -689,6 +848,288 @@
     ></ins>
     <script>
       (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    <script>
+      const translations = {
+        ko: {
+          metaTitle: "AshLight Store — 유틸리티 허브",
+          metaDescription:
+            "AshLight Store는 시간, 일정, 파일, 이미지, OCR, 영상/오디오 등 실용 유틸리티를 한곳에 모은 포털입니다.",
+          ogTitle: "AshLight Store — 유틸리티 허브",
+          ogDescription: "시간/일정/파일/이미지/OCR/영상/오디오 유틸리티 제공",
+          brandTag: "AshLight Store",
+          heroTitle: "유틸 한방, 일상의 스마트 도구 모음",
+          heroDesc: "설치 없이 바로 쓰는 실용 유틸리티만 모았습니다.",
+          servicesTitle: "🛠️ 유용한 서비스들",
+          serviceTimingTitle: "⏰ 예매는타이밍",
+          serviceTimingDesc: "타임스탬프, 타임존, 시간 계산 도구",
+          serviceNewsTitle: "📰 오늘의 IT 뉴스",
+          serviceNewsDesc: "국내 및 해외 IT 관련 뉴스를 빠르게 요약",
+          serviceWeatherTitle: "🌤️ 지금날씨",
+          serviceWeatherDesc: "내 근처와 주변 날씨 조회",
+          serviceFlowTitle: "🧵 FLOW 커뮤니티",
+          serviceFlowDesc: "익명 글쓰기, 실시간 반응, 주제별 스레드",
+          serviceOcrTitle: "🧾 이미지 OCR",
+          serviceOcrDesc: "사진 속 글자 빠르게 추출",
+          serviceImageOptTitle: "🗜️ 로컬 이미지 최적화",
+          serviceImageOptDesc: "이미지 용량 줄이기 + 파일 인사이트",
+          serviceImageCombTitle: "🖼️ 이미지 합치기",
+          serviceImageCombDesc: "사진 합치기·PDF 변환",
+          serviceAutoCutTitle: "🎬 AutoCut Studio",
+          serviceAutoCutDesc: "영상 침묵 감지·하이라이트 타임라인",
+          serviceAudioTitle: "🎧 오디오 편집기",
+          serviceAudioDesc: "자르기·합치기·WAV 내보내기",
+          serviceEmojiconTitle: "😀 Emojicon",
+          serviceEmojiconDesc: "이모지로 아이콘·파비콘 제작",
+          serviceMetaTitle: "🧰 Meta Kit",
+          serviceMetaDesc: "SEO·OG·파비콘 메타를 한 번에 생성",
+          servicePickTitle: "🍿 오늘 뭐 볼까? (OTT 픽)",
+          servicePickDesc: "버튼 몇 번으로 바로 추천",
+          serviceSnapTrailTitle: "📍 SnapTrail",
+          serviceSnapTrailDesc: "추억 타임라인 생성기",
+          serviceDayTitle: "📅 D-day 계산기",
+          serviceDayDesc: "날짜 계산, D-day, N일 후",
+          serviceHouseTitle: "📐 평수 계산기",
+          serviceHouseDesc: "평↔제곱미터 변환 + 대표 평형",
+          serviceVocalTitle: "🎤 두성터득기",
+          serviceVocalDesc: "헤드보이스·두성 연습 루틴",
+          guidesTitle: "📌 서비스 가이드",
+          guideFlow: "FLOW 커뮤니티 가이드",
+          guideAutoCut: "AutoCut Studio 가이드",
+          guideFile: "로컬 이미지 최적화 가이드",
+          guideMeta: "Meta Kit 가이드",
+          guideImage: "이미지 합치기 가이드",
+          guideHouse: "평수 계산기 가이드",
+          guideOcr: "이미지 OCR 가이드",
+          guideAudio: "Simple Audio Editor 가이드",
+          guideVocal: "두성터득기 가이드",
+          guideTime: "예매는타이밍 가이드",
+          guideNews: "오늘의 IT 뉴스 가이드",
+          guideWeather: "지금날씨 가이드",
+          guidePick: "OTT 픽 가이드",
+          guideEmojicon: "EmojiCon Studio 가이드",
+          guideSnapTrail: "SnapTrail 가이드",
+          guideDay: "D-day 계산기 가이드",
+          aboutTitle: "AshLight Store 소개",
+          aboutDesc:
+            "실용 유틸리티를 한곳에 모았습니다. 시간·날씨·일정부터 파일/이미지/OCR/영상/오디오 도구까지 바로 쓸 수 있습니다.",
+          aboutItem1: "모든 서비스는 독립적으로 동작하며 가볍게 로드됩니다.",
+          aboutItem2:
+            "필요한 기능만 담아, 누구나 빠르고 쾌적하게 사용할 수 있도록 설계했습니다.",
+          aboutItem3:
+            "반응형 UI로 제작되어 어떤 기기에서도 동일하게 가볍고 부드럽게 동작합니다.",
+          operationTitle: "운영 정보",
+          operationDesc:
+            "본 사이트는 AshLight에서 개발·운영하며 Google 정책을 준수합니다.",
+          operationContact: "문의:",
+          operationFooter:
+            "개인정보처리방침, 이용약관, 운영정책은 하단 링크에서 확인할 수 있습니다.",
+          footerPrivacy: "개인정보처리방침",
+          footerTerms: "이용약관",
+          footerCopyright: "저작권 안내",
+          footerPolicy: "운영정책",
+          footerRights: "© AshLight Store",
+          sponsorLabel: "스폰서",
+          sponsorAd: "광고",
+        },
+        en: {
+          metaTitle: "AshLight Store — Utility Hub",
+          metaDescription:
+            "AshLight Store is a portal that brings together practical utilities for time, schedules, files, images, OCR, video/audio, and more in one place.",
+          ogTitle: "AshLight Store — Utility Hub",
+          ogDescription: "Time/schedule/file/image/OCR/video/audio utilities",
+          brandTag: "AshLight Store",
+          heroTitle: "Utilities in one place, smart tools for daily life",
+          heroDesc:
+            "A collection of practical utilities you can use right away, no installation required.",
+          servicesTitle: "🛠️ Useful Services",
+          serviceTimingTitle: "⏰ Booking Timing",
+          serviceTimingDesc: "Timestamp, timezone, and time calculators",
+          serviceNewsTitle: "📰 Today's IT News",
+          serviceNewsDesc: "Quick summaries of domestic and global IT stories",
+          serviceWeatherTitle: "🌤️ Current Weather",
+          serviceWeatherDesc: "Check the weather near you",
+          serviceFlowTitle: "🧵 FLOW Community",
+          serviceFlowDesc:
+            "Anonymous posting, live reactions, and topic threads",
+          serviceOcrTitle: "🧾 Image OCR",
+          serviceOcrDesc: "Extract text from photos instantly",
+          serviceImageOptTitle: "🗜️ Local Image Optimizer",
+          serviceImageOptDesc: "Reduce image size and get file insights",
+          serviceImageCombTitle: "🖼️ Image Combiner",
+          serviceImageCombDesc: "Merge photos and convert to PDF",
+          serviceAutoCutTitle: "🎬 AutoCut Studio",
+          serviceAutoCutDesc: "Detect silence and build highlight timelines",
+          serviceAudioTitle: "🎧 Audio Editor",
+          serviceAudioDesc: "Cut, merge, and export WAV files",
+          serviceEmojiconTitle: "😀 Emojicon",
+          serviceEmojiconDesc: "Create icons and favicons with emojis",
+          serviceMetaTitle: "🧰 Meta Kit",
+          serviceMetaDesc: "Generate SEO, OG, and favicon metadata",
+          servicePickTitle: "🍿 What to Watch? (OTT Picks)",
+          servicePickDesc: "Instant recommendations with a few taps",
+          serviceSnapTrailTitle: "📍 SnapTrail",
+          serviceSnapTrailDesc: "Build memory timelines",
+          serviceDayTitle: "📅 D-day Calculator",
+          serviceDayDesc: "Date math, D-days, and future countdowns",
+          serviceHouseTitle: "📐 Floor Area Calculator",
+          serviceHouseDesc: "Convert pyeong to square meters with layout tips",
+          serviceVocalTitle: "🎤 Vocal Practice",
+          serviceVocalDesc: "Head voice and vocal register routines",
+          guidesTitle: "📌 Service Guides",
+          guideFlow: "FLOW Community Guide",
+          guideAutoCut: "AutoCut Studio Guide",
+          guideFile: "Local Image Optimizer Guide",
+          guideMeta: "Meta Kit Guide",
+          guideImage: "Image Merge Guide",
+          guideHouse: "Floor Area Calculator Guide",
+          guideOcr: "Image OCR Guide",
+          guideAudio: "Simple Audio Editor Guide",
+          guideVocal: "Vocal Trainer Guide",
+          guideTime: "Booking Timing Guide",
+          guideNews: "IT News Guide",
+          guideWeather: "Weather Guide",
+          guidePick: "OTT Picks Guide",
+          guideEmojicon: "Emojicon Studio Guide",
+          guideSnapTrail: "SnapTrail Guide",
+          guideDay: "D-day Calculator Guide",
+          aboutTitle: "About AshLight Store",
+          aboutDesc:
+            "We've gathered practical utilities in one place. From time and weather to file/image/OCR/video/audio tools, everything is ready to use.",
+          aboutItem1: "All services run independently and load quickly.",
+          aboutItem2:
+            "Designed with only essential features so everyone can use it quickly and smoothly.",
+          aboutItem3: "Built with responsive UI to run smoothly on any device.",
+          operationTitle: "Operation Information",
+          operationDesc:
+            "This site is developed and operated by AshLight and complies with Google policies.",
+          operationContact: "Contact:",
+          operationFooter:
+            "Privacy policy, terms of use, and operation policy can be found in the links below.",
+          footerPrivacy: "Privacy Policy",
+          footerTerms: "Terms of Use",
+          footerCopyright: "Copyright Notice",
+          footerPolicy: "Operation Policy",
+          footerRights: "© AshLight Store",
+          sponsorLabel: "Sponsor",
+          sponsorAd: "Ad",
+        },
+      };
+
+      const originalTitle = document.title;
+      const originalText = new Map();
+      const originalHtml = new Map();
+
+      document.querySelectorAll("[data-i18n]").forEach((el) => {
+        originalText.set(el, el.textContent);
+      });
+      document.querySelectorAll("[data-i18n-html]").forEach((el) => {
+        originalHtml.set(el, el.innerHTML);
+      });
+
+      const defaultLang = "en";
+      let currentLang = defaultLang;
+
+      function t(key, vars = {}) {
+        const langTable = translations[currentLang] || translations.ko;
+        const template = langTable?.[key] ?? translations.ko?.[key] ?? key;
+        if (typeof template !== "string") {
+          return template;
+        }
+        return template.replace(/\{(\w+)\}/g, (_, token) =>
+          vars[token] !== undefined ? vars[token] : `{${token}}`
+        );
+      }
+
+      function applyTranslations() {
+        const isEnglish = currentLang === "en";
+
+        // Update meta tags
+        document.title = isEnglish ? t("metaTitle") : originalTitle;
+        const setMeta = (selector, value) => {
+          const el = document.querySelector(selector);
+          if (el) el.setAttribute("content", value);
+        };
+        setMeta('meta[name="description"]', t("metaDescription"));
+        setMeta('meta[property="og:title"]', t("ogTitle"));
+        setMeta('meta[property="og:description"]', t("ogDescription"));
+        setMeta('meta[property="twitter:title"]', t("ogTitle"));
+        setMeta('meta[property="twitter:description"]', t("ogDescription"));
+
+        // Update text content
+        document.querySelectorAll("[data-i18n]").forEach((el) => {
+          if (isEnglish) {
+            el.textContent = t(el.dataset.i18n);
+          } else if (originalText.has(el)) {
+            el.textContent = originalText.get(el);
+          }
+        });
+
+        // Update HTML content
+        document.querySelectorAll("[data-i18n-html]").forEach((el) => {
+          if (isEnglish) {
+            const key = el.dataset.i18nHtml;
+            const value = t(key);
+            if (value && value !== key) {
+              el.innerHTML = value;
+            }
+          } else if (originalHtml.has(el)) {
+            el.innerHTML = originalHtml.get(el);
+          }
+        });
+      }
+
+      function setLang(lang, options = {}) {
+        const nextLang = translations[lang] ? lang : defaultLang;
+        currentLang = nextLang;
+        document.documentElement.lang = nextLang;
+        localStorage.setItem("preferredLang", nextLang);
+        document.querySelectorAll(".lang-switch button").forEach((button) => {
+          button.classList.toggle("active", button.dataset.lang === nextLang);
+        });
+        applyTranslations();
+
+        if (options.updateUrl) {
+          const url = new URL(window.location.href);
+          url.searchParams.set("lang", nextLang);
+          window.history.replaceState({}, "", url);
+        }
+      }
+
+      function getRegionPreferredLang(fallback = defaultLang) {
+        const intlLocale =
+          typeof Intl === "object" && typeof Intl.DateTimeFormat === "function"
+            ? Intl.DateTimeFormat().resolvedOptions().locale
+            : "";
+        const sources = [
+          ...(navigator.languages || []),
+          navigator.language,
+          navigator.userLanguage,
+          intlLocale,
+        ]
+          .filter(Boolean)
+          .map((locale) => locale.toLowerCase());
+        const hasKorean = sources.some((locale) => locale.startsWith("ko"));
+        return hasKorean ? "ko" : fallback;
+      }
+
+      function detectLang() {
+        const params = new URLSearchParams(window.location.search);
+        const paramLang = params.get("lang");
+        if (translations[paramLang]) return paramLang;
+        const stored = localStorage.getItem("preferredLang");
+        if (translations[stored]) return stored;
+        const autoLang = getRegionPreferredLang(defaultLang);
+        return translations[autoLang] ? autoLang : defaultLang;
+      }
+
+      document.querySelectorAll(".lang-switch button").forEach((button) => {
+        button.addEventListener("click", () => {
+          setLang(button.dataset.lang, { updateUrl: true });
+        });
+      });
+
+      setLang(detectLang(), { updateUrl: false });
     </script>
   </body>
 </html>
