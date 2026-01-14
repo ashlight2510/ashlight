@@ -1027,7 +1027,7 @@
         originalHtml.set(el, el.innerHTML);
       });
 
-      const defaultLang = "en";
+      const defaultLang = "ko";
       let currentLang = defaultLang;
 
       function t(key, vars = {}) {
@@ -1096,7 +1096,12 @@
         }
       }
 
-      function getRegionPreferredLang(fallback = defaultLang) {
+      function detectLang() {
+        const params = new URLSearchParams(window.location.search);
+        const paramLang = params.get("lang");
+        if (translations[paramLang]) return paramLang;
+        const stored = localStorage.getItem("preferredLang");
+        if (translations[stored]) return stored;
         const intlLocale =
           typeof Intl === "object" && typeof Intl.DateTimeFormat === "function"
             ? Intl.DateTimeFormat().resolvedOptions().locale
@@ -1110,17 +1115,7 @@
           .filter(Boolean)
           .map((locale) => locale.toLowerCase());
         const hasKorean = sources.some((locale) => locale.startsWith("ko"));
-        return hasKorean ? "ko" : fallback;
-      }
-
-      function detectLang() {
-        const params = new URLSearchParams(window.location.search);
-        const paramLang = params.get("lang");
-        if (translations[paramLang]) return paramLang;
-        const stored = localStorage.getItem("preferredLang");
-        if (translations[stored]) return stored;
-        const autoLang = getRegionPreferredLang(defaultLang);
-        return translations[autoLang] ? autoLang : defaultLang;
+        return hasKorean ? "ko" : "en";
       }
 
       document.querySelectorAll(".lang-switch button").forEach((button) => {
